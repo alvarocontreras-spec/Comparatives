@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Sports Comparatives · 5° básico</title>
+<style>
+*{box-sizing:border-box}
+body{margin:0;background:#edf2f0;color:#132f2a;font:1rem/1.55 system-ui,sans-serif}
+main{width:min(100% - 2rem,67rem);margin:2rem auto}
+header{position:relative;overflow:hidden;background:#12382d;color:white;border-radius:1.25rem;padding:clamp(1.5rem,5vw,4rem)}
+header::after{content:"";position:absolute;pointer-events:none;width:18rem;height:18rem;border:2px solid #ffffff26;border-radius:50%;right:-4rem;bottom:-10rem;box-shadow:0 0 0 22px #ffffff13,0 0 0 44px #ffffff10}
+.kicker{color:#d5f789;font-weight:700}
+h1{font-size:clamp(2.4rem,8vw,5rem);letter-spacing:-.055em;line-height:.98;margin:.5em 0 .3em}
+h2{font-size:1.35rem;margin:0 0 .75rem}
+h3{font-size:1rem;margin:0 0 .45rem}
+p{margin:.5rem 0}
+.grid{display:grid;grid-template-columns:minmax(0,1.4fr) minmax(0,1fr);gap:1rem;margin-top:1rem;align-items:start}
+section,aside{background:#fff;border:1px solid #cddbd4;border-radius:1rem;padding:1.35rem}
+ol{padding-left:1.35rem}li{margin:.55rem 0}
+blockquote{margin:1rem 0 0;padding:1rem;border-left:4px solid #609134;background:#f0f7e4;border-radius:0 .5rem .5rem 0}
+table{border-collapse:collapse;text-align:left;width:100%}th,td{padding:.55rem .3rem;border-bottom:1px solid #d9e4de}th{color:#355a4c}
+.draft{margin-top:1rem}textarea{width:100%;min-height:9rem;border:1px solid #819b8f;border-radius:.5rem;padding:.75rem;font:inherit;margin-top:.4rem;color:inherit}
+label{display:block;margin:.45rem 0}input{accent-color:#255f42}.hint{color:#395d50;font-size:.9rem}textarea:focus-visible,input:focus-visible{outline:3px solid #276344;outline-offset:2px}
+@media(max-width:710px){main{margin:1rem auto}.grid{grid-template-columns:1fr}}
+@media print{body{background:white}main{width:100%;margin:0}header{color:#132f2a;background:white;padding:0 0 1rem}.kicker{color:inherit}section,aside{break-inside:avoid}}
+</style>
+<main>
+<header>
+<p class="kicker">Writing task · 5° básico · A2</p>
+<h1>Sports Comparatives</h1>
+<p>Which sport would you choose for Sports Day?</p>
+</header>
+<div class="grid">
+<section aria-labelledby="instructions">
+<h2 id="instructions">Your task</h2>
+<p>Choose two sports. Write a short paragraph comparing them and recommend one for your class.</p>
+<ol>
+<li>Write <strong>three sentences</strong> comparing the two sports. Use a different adjective in each sentence.</li>
+<li>Use at least one comparative with <strong>-er than</strong> and one with <strong>more … than</strong>.</li>
+<li>Finish by saying which sport you recommend and why. Use <strong>because</strong>.</li>
+</ol>
+<blockquote><h3>Example</h3>Basketball is faster than volleyball. Volleyball is easier to set up in our gym than basketball. I think basketball is more exciting than volleyball. I recommend basketball because we can make teams and play a short tournament.</blockquote>
+</section>
+<aside aria-labelledby="word-bank">
+<h2 id="word-bank">Word bank</h2>
+<table><thead><tr><th scope="col">Adjective</th><th scope="col">Comparative</th></tr></thead>
+<tbody><tr><td>fast</td><td>faster than</td></tr><tr><td>easy</td><td>easier than</td></tr><tr><td>safe</td><td>safer than</td></tr><tr><td>exciting</td><td>more exciting than</td></tr><tr><td>difficult</td><td>more difficult than</td></tr><tr><td>popular</td><td>more popular than</td></tr></tbody></table>
+</aside>
+</div>
+<section class="draft" aria-labelledby="draft-title">
+<h2 id="draft-title">Write your paragraph</h2>
+<label for="paragraph">My Sports Day recommendation</label>
+<textarea id="paragraph" aria-describedby="draft-hint" spellcheck="false"></textarea>
+<p id="draft-hint" class="hint">Use this space to practise. Copy your paragraph before leaving the page.</p>
+<h3>Before you submit</h3>
+<label><input type="checkbox"> I compared two sports using three different adjectives.</label>
+<label><input type="checkbox"> I used <strong>-er than</strong> and <strong>more … than</strong>.</label>
+<label><input type="checkbox"> I recommended one sport and gave a reason.</label>
+</section>
+</main>
+</html>
